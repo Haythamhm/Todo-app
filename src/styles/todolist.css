@@ -1,0 +1,10 @@
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.todo-list .todo-card {
+    margin: 0.5rem auto; /* Center card horizontally if desired */
+    max-width: 500px; /* Limit the maximum width of the card */
+}

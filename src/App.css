@@ -1,0 +1,71 @@
+/* Full-screen background color */
+body {
+  background-color: #eff6ff;
+  margin: 0;
+  font-family: 'Inter', sans-serif; /* Ensure your chosen font is applied */
+}
+
+/* Centered card styling */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  padding: 2em;
+  margin: 2rem auto;
+  background: white; /* Optional: you can add a background color for contrast */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation effect */
+  max-width: 500px; /* Adjust size as needed */
+  width: 100%; /* Ensure card is responsive */
+}
+
+/* Logo styles (if used) */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Trash icon styling */
+.todoItem button {
+  background: transparent; /* Remove default button background */
+  border: none; /* Remove default button border */
+}
+
+.todoItem button .fa-trash-can {
+  background-color: red;
+  color: white; /* Ensure icon color contrasts with background */
+  border-radius: 50%; /* Circular background */
+  padding: 0.5em; /* Adjust padding as needed */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
